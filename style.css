@@ -3,8 +3,10 @@
   padding: 0;
   margin: 0;
 }
-h1 {
-  margin: 2rem 0 0 1.5rem;
+.heading {
+  margin: 2rem 0 0 1rem;
+  font-weight: 300;
+  font-size: 50px;
   font-family: fantasy;
 }
 section {
@@ -25,7 +27,7 @@ section {
   border-radius: 30%;
   bottom: 40px;
   color: rgb(12, 12, 12);
-  right: 50px;
+  right: 30px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
@@ -44,15 +46,20 @@ html {
 }
 .section1 {
   background-color: rgb(239, 155, 10);
+  border-top: #393939 0.2rem solid;
 }
 .section2 {
   background-color: rgb(244, 199, 110);
+  border-top: #393939 0.2rem solid;
 }
 .section3 {
   background-color: rgb(97, 232, 169);
+  border-top: #393939 0.2rem solid;
 }
 .section4 {
   background-color: rgb(68, 217, 236);
+  border-top: #393939 0.2rem solid;
+  border-bottom: #393939 0.2rem solid;
 }
 .footer-copy {
   text-align: center;
@@ -67,4 +74,22 @@ a {
 }
 .name {
   font-style: italic;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 323px) {
+  .heading {
+    font-size: 20px;
+  }
 }
